@@ -11,5 +11,6 @@ namespace BackTest.Models
         public bool isPurchase { get; set; }
         public Stock stock { get; set; }
         public int sharesAmount { get; set; }
+        public DateTime dateProcessed { get; set; }
     }
 }
