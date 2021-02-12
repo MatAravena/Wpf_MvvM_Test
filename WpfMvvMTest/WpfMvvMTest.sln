@@ -3,9 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31005.135
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BackTest", "BackTest\BackTest.csproj", "{922CE89E-45B7-443E-ABEF-83CF529888B1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BackTest", "BackTest\BackTest.csproj", "{922CE89E-45B7-443E-ABEF-83CF529888B1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestEDM", "TestEDM\TestEDM.csproj", "{6EA695E9-0AEB-4197-908E-AAEF5C9ADAA4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestEDM", "TestEDM\TestEDM.csproj", "{6EA695E9-0AEB-4197-908E-AAEF5C9ADAA4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LaConsolaApp", "LaConsolaApp\LaConsolaApp.csproj", "{9E04052C-6E7D-40BB-B4F4-B27404C5AF5D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{6EA695E9-0AEB-4197-908E-AAEF5C9ADAA4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6EA695E9-0AEB-4197-908E-AAEF5C9ADAA4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6EA695E9-0AEB-4197-908E-AAEF5C9ADAA4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9E04052C-6E7D-40BB-B4F4-B27404C5AF5D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9E04052C-6E7D-40BB-B4F4-B27404C5AF5D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9E04052C-6E7D-40BB-B4F4-B27404C5AF5D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9E04052C-6E7D-40BB-B4F4-B27404C5AF5D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

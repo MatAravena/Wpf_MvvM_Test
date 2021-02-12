@@ -8,10 +8,10 @@ namespace TestEDM
 {
     public class DesingTimeDbContextFactory : IDesignTimeDbContextFactory<TestDBContext>
     {
-        public TestDBContext CreateDbContext(string[] args)
+        public TestDBContext CreateDbContext(string[] args = null)
         {
             var options = new DbContextOptionsBuilder<TestDBContext>();
-            options.UseSqlServer("Data Source=DESKTOP-VQLO8GG\\SQLEXPRESS;Initial Catalog=BD_WpfMvvMTest;Integrated Security=True");
+            options.UseSqlServer("Data Source=TutePc\\SQLEXPRESS;Initial Catalog=BD_WpfMvvMTest;Integrated Security=True");
 
             return new TestDBContext(options.Options);
         }

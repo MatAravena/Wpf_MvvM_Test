@@ -4,9 +4,8 @@ using System.Text;
 
 namespace BackTest.Models
 {
-    public class Account
+    public class Account : DomainObject
     {
-        public int id { get; set; }
 
         public User AcountHolder { get; set; }
         public double balance { get; set; }

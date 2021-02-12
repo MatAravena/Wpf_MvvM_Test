@@ -10,8 +10,8 @@ using TestEDM;
 namespace TestEDM.Migrations
 {
     [DbContext(typeof(TestDBContext))]
-    [Migration("20210211184041_newFields")]
-    partial class newFields
+    [Migration("20210212102636_initial")]
+    partial class initial
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {

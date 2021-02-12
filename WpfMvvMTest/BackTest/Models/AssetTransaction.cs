@@ -4,9 +4,8 @@ using System.Text;
 
 namespace BackTest.Models
 {
-    public class AssetTransaction
+    public class AssetTransaction : DomainObject
     {
-        public int id { get; set; }
         public Account account { get; set; }
         public bool isPurchase { get; set; }
         public Stock stock { get; set; }

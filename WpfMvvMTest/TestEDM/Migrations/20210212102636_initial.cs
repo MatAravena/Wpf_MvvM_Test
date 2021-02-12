@@ -1,4 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore.Migrations;
+﻿using System;
+using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace TestEDM.Migrations
 {
@@ -13,7 +14,8 @@ namespace TestEDM.Migrations
                     id = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
                     email = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    username = table.Column<string>(type: "nvarchar(max)", nullable: true)
+                    username = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    password = table.Column<string>(type: "nvarchar(max)", nullable: true)
                 },
                 constraints: table =>
                 {
@@ -48,7 +50,8 @@ namespace TestEDM.Migrations
                         .Annotation("SqlServer:Identity", "1, 1"),
                     accountid = table.Column<int>(type: "int", nullable: true),
                     isPurchase = table.Column<bool>(type: "bit", nullable: false),
-                    sharesAmount = table.Column<int>(type: "int", nullable: false)
+                    sharesAmount = table.Column<int>(type: "int", nullable: false),
+                    dateProcessed = table.Column<DateTime>(type: "datetime2", nullable: false)
                 },
                 constraints: table =>
                 {
