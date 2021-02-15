@@ -1,0 +1,32 @@
+﻿<Application x:Class="WPFProj.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:viewmodels="clr-namespace:WPFProj.ViewModel"
+             xmlns:views="clr-namespace:WPFProj.Views"
+             xmlns:local="clr-namespace:WPFProj">
+    
+    <Application.Resources>
+        <!--StartupUri="MainWindow.xaml"-->
+
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries >
+                <ResourceDictionary Source="/Styles/Common.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+            
+            <DataTemplate DataType="{x:Type viewmodels:HomeVM }">
+                <views:HomeV />
+            </DataTemplate>
+            <DataTemplate DataType="{x:Type viewmodels:PortfolioVM }">
+                <views:PortfolioV/>
+            </DataTemplate>
+            <!--<DataTemplate DataType="{x:Type viewmodels:HomeVM }">
+                <views:HomeV />
+            </DataTemplate>
+            <DataTemplate DataType="{x:Type viewmodels:HomeVM }">
+                <views:HomeV />
+            </DataTemplate>-->
+            
+        </ResourceDictionary>
+
+    </Application.Resources>
+</Application>
